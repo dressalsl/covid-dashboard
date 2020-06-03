@@ -38,6 +38,9 @@ h2 {
     border-radius: 8px;
     border: 10px solid #fff;
     margin-top: 2vw;
+    box-shadow: 5px 5px 10px #0076a3;
+    -webkit-box-shadow: 5px 5px 10px #0076a3;
+    -moz-box-shadow: 5px 5px 10px #0076a3;
 }
 
 #dashboard header {
@@ -82,3 +85,26 @@ h2 {
     font-size: 16px;
 }
 
+#case-card{
+    box-shadow: 5px 5px 10px #428bca;
+    -webkit-box-shadow: 5px 5px 10px #428bca;
+    -moz-box-shadow: 5px 5px 10px #0076a3;
+}
+
+#case-death {
+    box-shadow: 5px 5px 10px #2E2E2E;
+    -webkit-box-shadow: 5px 5px 10px #2E2E2E;
+    -moz-box-shadow: 5px 5px 10px #212121;
+}
+
+#case-recovered {
+    box-shadow: 5px 5px 10px #5cb85c;
+    -webkit-box-shadow: 5px 5px 10px #5cb85c;
+    -moz-box-shadow: 5px 5px 10px #448b44;
+}
+
+#case-status {
+    box-shadow: 5px 5px 10px #d9534f;
+    -webkit-box-shadow: 5px 5px 10px #d9534f;
+    -moz-box-shadow: 5px 5px 10px #a33e3b;
+}
