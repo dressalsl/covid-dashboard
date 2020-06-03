@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="pt_br">
+
+<head>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Dashboard Covid-19</title>
+    
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="sytle.css"/>
+
+
+</head>
+<body>
+        
+	<div id="dashboard">
+        <header>
+            <h1>
+                Dashboard Covid-19
+            </h1>
+            <img src="assets/virus.svg" alt="Virus" id="virus">
+        </header>
+        <select class="form-control" name="country">
+                <option>Selecione o País</option>
+        </select>
+        <button type="submit" class="btn btn-outline-primary">Confirmar</button>
+    </div>
+
+    <div class="country-name" name="country-name">
+        <h2>
+            País
+        </h2>
+    </div>
+    
+    <div class="row" >
+
+        <div class="card border-primary mb-3 " style="max-width: 18rem;">
+            <div class="card-header">Casos</div>
+            <div class="card-body text-primary">
+                <h5 class="card-title">Casos diários:</h5>
+                <h5 class="card-title">Casos por milhão:</h5>
+                <h5 class="card-title">Total de casos:</h5>
+            </div>
+        </div>
+        <div class="card border-secondary mb-3" style="max-width: 18rem;">
+            <div class="card-header">Mortes</div>
+            <div class="card-body text-secondary">
+                <h5 class="card-title">Mortes diários:</h5>
+                <h5 class="card-title">Mortes por milhão:</h5>
+                <h5 class="card-title">Total de mortes:</h5>
+            </div>
+        </div>
+        <div class="card border-success mb-3" style="max-width: 18rem;">
+            <div class="card-header">Recuperados</div>
+            <div class="card-body text-success">
+                <h5 class="card-title">Total de recuperados:</h5>
+            </div>
+        </div>
+        <div class="card border-danger mb-3" style="max-width: 18rem;">
+            <div class="card-header">Status</div>
+            <div class="card-body text-danger">
+                <h5 class="card-title">Casos ativos:</h5>
+                <h5 class="card-title">Casos críticos:</h5>
+            </div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
