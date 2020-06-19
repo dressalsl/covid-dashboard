@@ -1,10 +1,6 @@
 const countrySelect = document.querySelector("select[name=country]");
-// const countryName = document.querySelector("select[name=country-name]");
+const countryName = document.querySelector(".country-name");
 
-
-
-countrySelect.addEventListener("change",populateCountry)
-// countryName.addEventListener('submit', getNameCountry);
 
 function populateCountry() {
     const url = "http://coronavirus-19-api.herokuapp.com/countries";
@@ -13,32 +9,14 @@ function populateCountry() {
     .then( countries => {
         for (const country of countries) {
             countrySelect.innerHTML += `<option value = "">${country.country}</option>`
+            // countryName.innerHTML += `<h2>${country.country}</h2>`
+            // console.log(country);
         }
         
+        
     })
+    .catch(error => console.error(error))
     
 }
 
-populateCountry()
-
-//https://github.com/ja-gaeta/busca-cep/blob/master/app.js
-
-// function getNameCountry(e){
-//     e.preventDefault();
-
-//     fetch(`http://coronavirus-19-api.herokuapp.com/countries/${country}`)
-// }
-
-// function getNameCountry(event) {
-//     const countrySelect = document.querySelector("[name=country]");
-//     const url = "http://coronavirus-19-api.herokuapp.com/countries/${country}";
-//     fetch(url)
-//     console.log(url)
-//     .then((response) => response.json())
-//     .then( countries =>{
-//         for (const country of countries) {
-//             countrySelect.innerHTML += `<h2>${country.country}</h2>`
-//         }
-//     }
-// }
-    
+countrySelect.addEventListener('change', populateCountry());
