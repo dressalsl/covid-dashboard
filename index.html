@@ -4,7 +4,6 @@
 
 <head>
 
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -25,12 +24,13 @@
             </h1>
             <img src="assets/virus.svg" alt="Virus" id="virus">
         </header>
-        <select class="form-control" name="country">
+        <select class="form-control" name="country" id="country-select">
         </select>
-        <button type="button" class="btn btn-outline-primary" id="btn-country">Confirmar</button>
+        
     </div>
 
     <div class="country-name" name="name" >
+        <strong class="county-name-title"></strong>
         <!-- <h2 id="country-name">País</h2> -->
     </div>
 
@@ -40,30 +40,54 @@
         <div class="card border-primary mb-3 " style="max-width: 18rem;" id="case-card">
             <div class="card-header">Casos</div>
             <div class="card-body text-primary">
-                <h5 class="card-title">Casos diários:</h5>
-                <h5 class="card-title">Casos por milhão:</h5>
-                <h5 class="card-title">Total de casos:</h5>
+                <h5 class="card-title" >Casos diários:
+                    <span id="diary-cases"></span>
+                </h5>
+                <h5 class="card-title" >Casos por milhão:
+                    <span id="milion-cases"></span>
+                </h5>
+                <h5 class="card-title" >Total de casos:
+                    <span id="all-cases"></span>
+                </h5>
             </div>
         </div>
         <div class="card border-secondary mb-3" style="max-width: 18rem;" id="case-death">
             <div class="card-header">Mortes</div>
             <div class="card-body text-secondary">
-                <h5 class="card-title">Mortes diários:</h5>
-                <h5 class="card-title">Mortes por milhão:</h5>
-                <h5 class="card-title">Total de mortes:</h5>
+                <h5 class="card-title">Mortes diárias:
+                    <span id="diary-deaths"></span>
+                </h5>
+                <h5 class="card-title">Mortes por milhão:
+                    <span id="milion-deaths"></span>
+                </h5>
+                <h5 class="card-title">Total de mortes:
+                    <span id="all-deaths"></span>
+                </h5>
             </div>
         </div>
         <div class="card border-success mb-3" style="max-width: 18rem;" id="case-recovered">
-            <div class="card-header">Recuperados</div>
+            <div class="card-header">Testes</div>
             <div class="card-body text-success">
-                <h5 class="card-title">Total de recuperados:</h5>
+                <h5 class="card-title">Teste por milhão:
+                    <span id="milion-tests"></span>
+                </h5>
+                <h5 class="card-title">Total de teste:
+                    <span id="all-tests"></span>
+                </h5>
             </div>
         </div>
         <div class="card border-danger mb-3" style="max-width: 18rem;" id="case-status">
             <div class="card-header">Status</div>
             <div class="card-body text-danger">
-                <h5 class="card-title">Casos ativos:</h5>
-                <h5 class="card-title">Casos críticos:</h5>
+                <h5 class="card-title">Casos ativos:
+                    <span id="active-cases"></span>
+                </h5>
+                <h5 class="card-title">Casos críticos:
+                    <span id="critical-cases"></span>
+                </h5>
+                <h5 class="card-title">Recuperados:
+                    <span id="recovered"></span>
+                </h5>
             </div>
         </div>
 

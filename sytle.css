@@ -28,6 +28,10 @@ h2 {
     
 }
 
+h5{
+    font-weight: bold;
+}
+
 
 #dashboard {
     width: 30%;
@@ -47,10 +51,6 @@ h2 {
     display: flex;
     align-items: center;
     margin-top: 48px;
-}
-
-#dashboard button {
-    width: 100%;
 }
 
 #virus {
@@ -73,6 +73,11 @@ h2 {
     text-justify: center;
     margin-top: 40px;
     text-align: center;
+}
+
+.county-name-title {
+    color: var(--blue2);
+    font-size: 3em;    
 }
 
 .card-header {
