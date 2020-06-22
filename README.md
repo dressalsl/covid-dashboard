@@ -1,3 +1,7 @@
+<h1 align="center">
+    Dashboard Covid-19 :eight_spoked_asterisk:
+</h1>
+
 ## Sobre o projeto 🚀
 
 O Covid Dashboard é um projeto simples utilizando HTML, CSS e Javascript, onde pode-se visualizar os dados atualizados da Covid-19 por país ou o planeta.
