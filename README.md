@@ -2,6 +2,8 @@
     Dashboard Covid-19 :eight_spoked_asterisk:
 </h1>
 
+<img src="https://raw.githubusercontent.com/dressalsl/covid-dashboard/master/assets/Screenshot%20from%202020-06-22%2014-36-56.png?token=ALY74OAYMC3KEM5IZWRROZS66DW3E" align="center"></img>
+
 ## Sobre o projeto 🚀
 
 O Covid Dashboard é um projeto simples utilizando HTML, CSS e Javascript, onde pode-se visualizar os dados atualizados da Covid-19 por país ou o planeta.
