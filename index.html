@@ -16,26 +16,26 @@
 
 </head>
 <body>
+    <div class="logo">
+        <h1>
+            Dashboard Covid-19
+        </h1>
+        <img src="assets/virus.svg" alt="Virus" id="virus">
+       
+    </div>
         
 	<div id="dashboard">
-        <header>
-            <h1>
-                Dashboard Covid-19
-            </h1>
-            <img src="assets/virus.svg" alt="Virus" id="virus">
-        </header>
-        <select class="form-control" name="country" id="country-select">
-        </select>
+        <div class="country-name" name="name" >
+            <strong class="county-name-title"></strong>
+        </div>
+        <select class="form-control" name="country" id="country-select"></select>
         
     </div>
 
-    <div class="country-name" name="name" >
-        <strong class="county-name-title"></strong>
-        <!-- <h2 id="country-name">País</h2> -->
-    </div>
+ 
 
     <row id="info"></row>
-    <div class="row" >
+    <div class="card-deck" >
 
         <div class="card border-primary mb-3 " style="max-width: 18rem;" id="case-card">
             <div class="card-header">Casos</div>
@@ -65,7 +65,7 @@
                 </h5>
             </div>
         </div>
-        <div class="card border-success mb-3" style="max-width: 18rem;" id="case-recovered">
+        <div class="card border-success mb-3" style="max-width: 18rem;" id="case-tests">
             <div class="card-header">Testes</div>
             <div class="card-body text-success">
                 <h5 class="card-title">Teste por milhão:

@@ -18,8 +18,10 @@ body {
 
 
 h1 {
-    color: var(--blue);
+    color: white;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
 }
 
 h2 {
@@ -32,36 +34,44 @@ h5{
     font-weight: bold;
 }
 
+.logo{
+    background-color:var(--blue);
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4em;
+    
+}
+
+.logo img {
+    width: 5em;
+    height: 5em;
+    margin-left: 2em;
+}
 
 #dashboard {
     width: 30%;
-    height: 30%;
+    height: 50%;
     max-width: 1100px;
+    align-items: center;
     margin: 0 auto;
     background-color: #fff;
     border-radius: 8px;
     border: 10px solid #fff;
     margin-top: 2vw;
+    padding: 20px;
     box-shadow: 5px 5px 10px #0076a3;
     -webkit-box-shadow: 5px 5px 10px #0076a3;
     -moz-box-shadow: 5px 5px 10px #0076a3;
 }
 
-#dashboard header {
-    display: flex;
-    align-items: center;
-    margin-top: 48px;
-}
-
-#virus {
-    margin: 16px;
-}
-
 .form-control{
     margin: 30px 0px;
+    text-align: center;
 }
 
-.row {
+.card-deck {
     justify-content: space-between;
     margin: 6vw 4vw 4vw 4vw;
 }
@@ -70,14 +80,22 @@ h5{
     
     width: 10%;
     margin: 0 auto;
-    text-justify: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-top: 40px;
     text-align: center;
 }
 
 .county-name-title {
-    color: var(--blue2);
-    font-size: 3em;    
+    color: var(--blue);
+    font-size: 3em;
+    position: center;    
+}
+
+.card border-primary mb-3 {
+    width: auto;
+    height: auto;
 }
 
 .card-header {
@@ -102,7 +120,7 @@ h5{
     -moz-box-shadow: 5px 5px 10px #212121;
 }
 
-#case-recovered {
+#case-tests {
     box-shadow: 5px 5px 10px #5cb85c;
     -webkit-box-shadow: 5px 5px 10px #5cb85c;
     -moz-box-shadow: 5px 5px 10px #448b44;
@@ -112,4 +130,32 @@ h5{
     box-shadow: 5px 5px 10px #d9534f;
     -webkit-box-shadow: 5px 5px 10px #d9534f;
     -moz-box-shadow: 5px 5px 10px #a33e3b;
+}
+
+
+@media (max-width: 700px) {
+    #dashboard {
+        background-position-x: 180vw;
+        width: 50%;
+        height: 50%;
+    }
+
+    @media (max-width: 414px) {
+        #dashboard{
+            width: 60%;
+            height: 60%;
+            margin-top: 1em;
+            margin-bottom: 3em;
+        }
+        .card-deck {
+            display: block;
+            margin-top: 2em;
+            margin-left: 4em;
+            
+        }
+
+    }
+ 
+
+    
 }
